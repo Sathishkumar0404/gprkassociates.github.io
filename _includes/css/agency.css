@@ -276,6 +276,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    
 }
 
 header .intro-text {
@@ -360,6 +361,32 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+}
+
+.service-text{
+    display: flex;
+    padding-bottom: 20px;
+    text-align: start;
+}
+
+#header-title{
+    min-height: 340px;
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.02);
+    }
+    15%{
+        transform: scale(1);
+    }
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.02);
+    }
 }
 
 #portfolio .portfolio-item {

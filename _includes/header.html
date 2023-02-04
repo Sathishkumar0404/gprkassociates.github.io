@@ -47,11 +47,31 @@
   <div class="container">
     <div class="intro-text">
       <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-      <div class="intro-heading">It's Nice To Meet You</div>
+      <div id="header-title" class="intro-heading"></div>
       <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
     </div>
   </div>
+  <script>
+    var slideText = document.getElementById("header-title");
+    let texts = [
+      "Do you want to set up a foreign subsidiary in India ?",
+      "Tax filing of NRI's",
+      " Are you exporting software services from India ?",
+      "Are you doing related party transactions ?",
+    ];
+    let len = texts.length;
+    let i = 0;
+    function slider() {
+      if (i > len - 1) {
+        i = 0;
+      }
+      slideText.innerHTML = texts[i];
+      i++;
+      setTimeout("slider()", 3000);
+    }
+  </script>
 </header>
+
 <!--
         {% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
