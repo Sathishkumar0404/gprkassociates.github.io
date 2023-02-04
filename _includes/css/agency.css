@@ -275,8 +275,11 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 600;
     text-transform: uppercase;
     color: white;
+    margin-top: -60px;
+    padding: 30px;
   }
   .headline {
+    display: flex;
     top: 70%;
     position: absolute;
     z-index: 3;
