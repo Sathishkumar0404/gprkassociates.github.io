@@ -263,21 +263,31 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+    .header-section {
+        font-size: 50px;
+    }
+    
 }
 
+@media(max-width:768px){
+    .header-section {
+        font-size: 30px;
+    }
+}
 /* header */
 .header-section {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    /* font-size: 50px; */
     font-weight: 600;
     text-transform: uppercase;
     color: white;
     margin-top: -60px;
     padding: 30px;
   }
+  
   .headline {
     display: flex;
     top: 70%;
