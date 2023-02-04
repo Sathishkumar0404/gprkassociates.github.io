@@ -284,6 +284,7 @@ header .intro-text {
 }
 
 header .intro-text .intro-lead-in {
+    
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 22px;
@@ -332,6 +333,13 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+}
+
+.contact-heading{
+    text-align: start;
+}
+.site-email{
+    text-transform: lowercase;
 }
 
 section h3.section-subheading {
@@ -631,6 +639,10 @@ section h3.section-subheading {
         padding: 0 100px 20px 20px;
     }
 }
+.team-member-container{
+    display: flex;
+    justify-content: center;
+}
 
 .team-member {
     margin-bottom: 50px;
@@ -663,8 +675,29 @@ section#contact {
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+section#contact .section-heading ,.section-address {
     color: #fff;
+}
+
+.section-address {
+    font-size: medium;
+    text-align: start;
+}
+.address-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail-icon{
+   
+    margin-right: 10px;
+    color:darkorange
+}
+
+.contact-email{
+    display: flex;
+    align-items: center;
 }
 
 section#contact .form-group {
